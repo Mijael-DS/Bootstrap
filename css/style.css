@@ -87,3 +87,44 @@
   .image-container:hover .caption {
     opacity: 1; /* Aparece el texto en el hover */
   }
+
+  /* Estilos personalizados para el footer */
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+  }
+
+  footer h5 {
+    color: #f39c12;
+    margin-bottom: 30px;
+  }
+
+  footer .social-icons a {
+    font-size: 20px;
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+
+  footer .social-icons a:hover {
+    color: #f39c12; /* Color dorado en hover */
+  }
+
+  footer .links a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s ease;
+  }
+
+  footer .links a:hover {
+    color: #f39c12; /* Color dorado en hover */
+  }
+
+  footer .brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f39c12;
+  }
