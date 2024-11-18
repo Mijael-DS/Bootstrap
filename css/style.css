@@ -88,6 +88,46 @@
     opacity: 1; /* Aparece el texto en el hover */
   }
 
+/* Establece el tamaño del mapa */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+
+  .form-container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-container h3 {
+    color: #343a40;
+  }
+
+  .btn-custom {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: #0056b3;
+  }
+
+  .form-control:focus {
+    box-shadow: 0 0 8px rgba(38, 143, 255, 0.5);
+    border-color: #007bff;
+  }
+
+
   /* Estilos personalizados para el footer */
   footer {
     background-color: #343a40;
