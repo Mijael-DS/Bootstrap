@@ -1,0 +1,89 @@
+   /* Estilo para asegurar que todas las imágenes tengan la misma altura */
+   .carousel-item img {
+    width: 100%; /* El ancho de la imagen será del 100% */
+    height: 450px; /* Altura fija de 450px */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+  }
+      /* Estilo adicional */
+      .custom-container {
+        padding: 30px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+      }
+      h2 {
+        color: #555;
+      }
+      p {
+        color: #777;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+       /* galeria */
+       .galeria img {
+          width: 100%; /* El ancho de la imagen será del 100% */
+      height: 450px; /* Altura fija de 450px */
+      object-fit: cover;
+      }
+
+       /* Estilos personalizados */
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+  }
+
+  .image-container img {
+    /* width: 100%;
+    height: auto; */
+    transition: transform 0.3s ease; /* Efecto de zoom */
+    width: 100%; /* El ancho de la imagen será del 100% */
+    height: 450px; /* Altura fija de 450px */
+    object-fit: cover;
+  }
+
+  .image-container:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen en hover */
+  }
+
+  .image-container:hover {
+    transform: translateY(-5px); /* Levanta el contenedor ligeramente */
+  }
+
+  /* Opcional: Fondo de overlay oscuro en hover */
+  .image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-container:hover::after {
+    opacity: 1; /* Muestra el overlay oscuro al hacer hover */
+  }
+
+  .image-container .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-container:hover .caption {
+    opacity: 1; /* Aparece el texto en el hover */
+  }
